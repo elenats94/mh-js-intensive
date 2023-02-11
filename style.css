@@ -1,9 +1,49 @@
-img {
-    display: block;
-    width: 500px;
-    margin: 10px auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+header {
+    background-color: lightgrey;
+    height: 50px;
+}
+
+nav {
+    /*border: 1px dotted black;*/
+    /*width: min-content;*/
+    /*width: max-content;*/
+    height: inherit;
+    display: flex;
+    /*justify-content: start;*/
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.about_us {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.about_us img {
+    width: 300px;
+    margin: 0 30px;
+}
+
+footer {
+    background-color: #b6f4ff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* OLD */
 span {
     font-size: 15px;
 }
