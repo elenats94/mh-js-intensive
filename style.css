@@ -2,67 +2,163 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    background-color: lightgrey;
-    height: 50px;
-}
-
-nav {
-    /*border: 1px dotted black;*/
-    /*width: min-content;*/
-    /*width: max-content;*/
-    height: inherit;
-    display: flex;
-    /*justify-content: start;*/
-    align-items: center;
-}
-
-nav > a {
     text-decoration: none;
-    color: black;
-    padding: 0 15px;
-    font-size: 20px;
 }
 
-.about_us {
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #333;
+    background-color: #ebf2f5;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    color: #f54a08;
+}
+
+header, footer {
+    padding: 20px 0;
+}
+
+header > .wrapper {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-weight: 100;
+    font-style: italic;
+}
+
+nav a {
+    padding: 0 20px;
+}
+
+main {
     margin: 20px 0;
 }
 
-.about_us img {
-    width: 300px;
-    margin: 0 30px;
+main > div {
+    margin: 30px 0;
+    padding: 40px 0;
+}
+
+main h2 {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+main h2::after {
+    display: inline-block;
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    background: url("img/icons/paw.png") no-repeat;
+}
+
+main p {
+    padding: 5px 0;
+}
+
+.about_us {
+    background-color: #e4e0e0;
+}
+
+.card_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 100%;
+    border: 3px solid #999999;
+    margin-bottom: 10px;
+}
+
+.card_title {
+    color: #aaa;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.afterthought .content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.afterthought img {
+    width: 400px;
+    rotate: 5deg;
+}
+
+.afterthought .text {
+    color: #999;
+    font-style: italic;
+    margin-right: 40px;
+    width: max-content;
 }
 
 footer {
-    background-color: #b6f4ff;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    background-color: #e4e0e0;
 }
 
-/* OLD */
-span {
-    font-size: 15px;
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.name {
-
-    color: red;
+.sources {
+    font-style: italic;
+    flex-grow: 1;
 }
 
-#skill {
-    color: green;
+.year {
+    flex-grow: 3;
 }
 
-h1 {
-    padding: 0;
-    margin: 30px;
-    text-align: center;
+.sources a {
+    color: #888;
 }
 
-h2 {
-    text-align: center;
+.sources a:hover{
+    color: #f54a08;
+}
+
+.sources_list,
+.social_list {
+    list-style: none;
+}
+
+.social_list {
+    display: flex;
+}
+
+.social_list li {
+    margin-left: 10px;
 }
